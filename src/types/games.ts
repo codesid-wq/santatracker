@@ -1,4 +1,4 @@
-export type GameType = 'selector' | 'gift-catcher' | 'naughty-or-nice';
+export type GameType = 'selector' | 'gift-catcher' | 'naughty-or-nice' | 'sleigh-racer' | 'cookie-clicker' | 'reindeer-launcher' | 'present-puzzle' | 'chimney-jump' | 'ornament-collector' | 'snowball-toss' | 'elf-training' | 'naughty-list-quiz' | 'stockings-shuffle';
 
 export interface GameScore {
   game: string;

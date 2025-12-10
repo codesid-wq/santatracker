@@ -9,8 +9,18 @@ import Snowfall from './Snowfall';
 import GameSelector from './GameSelector';
 import GiftCatcher from './GiftCatcher';
 import NaughtyOrNice from './NaughtyOrNice';
+import SleighRacer from './SleighRacer';
+import CookieClicker from './CookieClicker';
+import ReindeerLauncher from './ReindeerLauncher';
+import PresentPuzzle from './PresentPuzzle';
+import ChimneyJump from './ChimneyJump';
+import OrnamentCollector from './OrnamentCollector';
+import SnowballToss from './SnowballToss';
+import ElfTraining from './ElfTraining';
+import NaughtyListQuiz from './NaughtyListQuiz';
+import StockingsShuffle from './StockingsShuffle';
 
-type ActiveGame = null | 'selector' | 'gift-catcher' | 'naughty-or-nice';
+type ActiveGame = null | 'selector' | 'gift-catcher' | 'naughty-or-nice' | 'sleigh-racer' | 'cookie-clicker' | 'reindeer-launcher' | 'present-puzzle' | 'chimney-jump' | 'ornament-collector' | 'snowball-toss' | 'elf-training' | 'naughty-list-quiz' | 'stockings-shuffle';
 
 export default function SantaTracker() {
   const { status } = useSanta();
@@ -61,6 +71,46 @@ export default function SantaTracker() {
 
       {activeGame === 'naughty-or-nice' && (
         <NaughtyOrNice onClose={() => setActiveGame('selector')} />
+      )}
+
+      {activeGame === 'sleigh-racer' && (
+        <SleighRacer onClose={() => setActiveGame('selector')} />
+      )}
+
+      {activeGame === 'cookie-clicker' && (
+        <CookieClicker onClose={() => setActiveGame('selector')} />
+      )}
+
+      {activeGame === 'reindeer-launcher' && (
+        <ReindeerLauncher onClose={() => setActiveGame('selector')} />
+      )}
+
+      {activeGame === 'present-puzzle' && (
+        <PresentPuzzle onClose={() => setActiveGame('selector')} />
+      )}
+
+      {activeGame === 'chimney-jump' && (
+        <ChimneyJump onClose={() => setActiveGame('selector')} />
+      )}
+
+      {activeGame === 'ornament-collector' && (
+        <OrnamentCollector onClose={() => setActiveGame('selector')} />
+      )}
+
+      {activeGame === 'snowball-toss' && (
+        <SnowballToss onClose={() => setActiveGame('selector')} />
+      )}
+
+      {activeGame === 'elf-training' && (
+        <ElfTraining onClose={() => setActiveGame('selector')} />
+      )}
+
+      {activeGame === 'naughty-list-quiz' && (
+        <NaughtyListQuiz onClose={() => setActiveGame('selector')} />
+      )}
+
+      {activeGame === 'stockings-shuffle' && (
+        <StockingsShuffle onClose={() => setActiveGame('selector')} />
       )}
     </div>
   );

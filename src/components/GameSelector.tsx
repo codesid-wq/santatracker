@@ -20,6 +20,76 @@ export default function GameSelector({ onSelectGame, onClose }: GameSelectorProp
       description: 'Decide if actions are naughty or nice',
       icon: HelpCircle,
       color: 'from-green-500 to-green-600'
+    },
+    {
+      id: 'sleigh-racer',
+      title: 'Sleigh Racer',
+      description: 'Steer your sleigh down the snowy course',
+      icon: Gift,
+      color: 'from-cyan-500 to-blue-600'
+    },
+    {
+      id: 'cookie-clicker',
+      title: 'Cookie Clicker',
+      description: 'Click cookies as fast as you can',
+      icon: Gift,
+      color: 'from-yellow-500 to-amber-600'
+    },
+    {
+      id: 'reindeer-launcher',
+      title: 'Reindeer Launcher',
+      description: 'Launch reindeer to reach maximum height',
+      icon: Gift,
+      color: 'from-red-500 to-pink-600'
+    },
+    {
+      id: 'present-puzzle',
+      title: 'Present Puzzle',
+      description: 'Match pairs of presents to win',
+      icon: Gift,
+      color: 'from-purple-500 to-pink-600'
+    },
+    {
+      id: 'chimney-jump',
+      title: 'Chimney Jump',
+      description: 'Jump over obstacles while going down chimneys',
+      icon: Gift,
+      color: 'from-red-600 to-slate-700'
+    },
+    {
+      id: 'ornament-collector',
+      title: 'Ornament Collector',
+      description: 'Collect ornaments as they fall',
+      icon: Gift,
+      color: 'from-green-500 to-emerald-600'
+    },
+    {
+      id: 'snowball-toss',
+      title: 'Snowball Toss',
+      description: 'Throw snowballs at targets',
+      icon: Gift,
+      color: 'from-cyan-600 to-blue-700'
+    },
+    {
+      id: 'elf-training',
+      title: 'Elf Training',
+      description: 'Test your reaction time with colors',
+      icon: HelpCircle,
+      color: 'from-indigo-500 to-purple-600'
+    },
+    {
+      id: 'naughty-list-quiz',
+      title: 'Naughty List Quiz',
+      description: 'Answer trivia questions about being nice or naughty',
+      icon: HelpCircle,
+      color: 'from-slate-700 to-slate-900'
+    },
+    {
+      id: 'stockings-shuffle',
+      title: 'Stockings Shuffle',
+      description: 'Match stockings in this memory game',
+      icon: Gift,
+      color: 'from-red-600 to-green-600'
     }
   ];
 
@@ -39,7 +109,7 @@ export default function GameSelector({ onSelectGame, onClose }: GameSelectorProp
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {games.map((game) => {
             const Icon = game.icon;
             return (
